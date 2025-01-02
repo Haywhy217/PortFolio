@@ -1,8 +1,9 @@
 import React from 'react'
 import styles from './Menu.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter, faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import logo from '../assets/Images/Brandlogo.png';
 
 const Menu = () => {
   const handleClose = () =>{
@@ -13,9 +14,13 @@ const Menu = () => {
 
   return (
   <>
+  <div className={styles.container}>
   <div className={styles.closeicon} onClick={handleClose}>
     <FontAwesomeIcon icon={faTimes} className={styles.close} />
   </div>
+  <div className={styles.logoContainer}>
+        <img src={logo} className={styles.logo}/>
+    </div>
   <div className={styles.menuctn}>
   <div className={styles.content}>
     <div>
@@ -30,7 +35,6 @@ const Menu = () => {
     </div>
     <div className={styles.details}>
       <p>olanipekunayomide217@gmail.com</p>
-      <p>+2349058405456,+2348063417132</p>
       <div className={styles.menusocials}>
       <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
       <FontAwesomeIcon icon={faTwitter} className= {styles.icons} />
@@ -38,10 +42,13 @@ const Menu = () => {
     <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
       <FontAwesomeIcon icon={faLinkedin} className={styles.icons} />
     </a>
-  
+    <a href='https://github.com/Haywhy217' target='blank' rel='noopener noreferrer'>
+    <FontAwesomeIcon icon={faGithub} className={styles.icons}/>
+    </a>
       </div>
     </div>
 
+    </div>
     </div>
     </>
   )

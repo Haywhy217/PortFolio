@@ -1,15 +1,18 @@
 import React from 'react'
-import Hero from '../Components/Hero';
-import About from '../Components/About';
-// import styles from '../Components/Homepage.module.css';
+import Menu from '../Components/Menu'
+import { useNavigate } from 'react-router-dom'
 
-const Homepage = () => {
+const HomePage = () => {
+  const navigate = useNavigate();
+
+  const handleHomeClick = () => {
+    navigate('/');
+  };
+
   return (
-    <div className={StyleSheet.Hpagectn}>
-      <Hero/>
-      <About/>
-    </div>
-  )
-}
-
-export default Homepage
+    <>
+      <Menu onHomeClick={handleHomeClick} />
+    </>
+  );
+};
+export default HomePage

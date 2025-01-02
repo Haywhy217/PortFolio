@@ -1,26 +1,28 @@
 .aboutctn{
   width: 100%;
-  height: 350px;
+  height: 400px;
   background-color: #ffff;
+  
 }
 
 .abouttxt{
   width: 580px;
-  height: 200px;
-  border: 1px solid black;
+  height: 250px;
   font-size: 12px;
   margin: 0 auto;
   text-align: left;
   text-wrap: wrap;
   line-height: 1.8;
   font-family: sans-serif, roboto;
+  margin-top: 20px;
+  margin-bottom: 25px;
 }
 .skills{
-  width: 580px;
-  height: 100px;
-  border: 1px solid black;
+  width: 600px;
+  height: 150px;
   margin: 0 auto;
-  margin-top: 20px;
+  padding-top: 20px;
+ 
 }
 .skills ul{
   display: flex;
@@ -29,5 +31,5 @@
   margin: 0 5px;
   padding: 0;
   margin: 0;
-  /* text-align: center; */
+  font-weight: 700;
 }

@@ -1,29 +1,47 @@
+
+.container{
+  height: 100%;
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-image:linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)),url("../assets/Images/backgroundpic.jpg");
+  overflow: hidden;
+  position: fixed;
+  background-position: center;
+  cursor: pointer;
+
+}
+
 .menuctn{
   display: flex;
   align-items: center;
+  gap: 35px; 
   justify-content: center;
-  height: 95px;
-  width: 100%;
-  margin: 0 auto;
-  gap: 50px;
   font-family: league spartan;
-  margin: 150px auto;
-  position: relative;
- 
 }
+.logoContainer{
+  width: 100px;
+  margin-left: 20px;
+}
+  
+ .logo{
+  object-fit: contain;
+ }
+
 .content{
+
   display: flex;
   gap: 5px;
   padding: 10px;
   width: 340px;
   height: 250px;
- justify-content: center;
+  justify-content: center;
+  margin-left: 80px;
+  margin-top: -30px;
 }
 .menutext{
   margin-top: 50px;
-  font-size: 16px;
+  font-size: 28px;
   rotate: 270deg;
-
 }
 
 .details{
@@ -32,12 +50,14 @@
   width: 300px;
   height: 110px;
   font-size: 20px;
-  margin-right: 15px;
+  margin-right: 25px;
+  /* border: 1px solid black; */
 }
 
 .icons{
   margin-right: 20px;
   color: #1E1E1E;
+  cursor: pointer;
 }
 
 .closeicon{

@@ -7,4 +7,15 @@ body,html{
   height: 100%;
   overflow-x: hidden; 
   box-sizing: border-box;
+
+}
+* {
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+img{
+  max-width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin: 0 auto; /* Center the image horizontally */
+  overflow: hidden; /* Hide any overflowing content */
 }
