@@ -5,9 +5,9 @@
  background-repeat: no-repeat;
  background-image:linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)),url("../assets/Images/backgroundpic.jpg");
   overflow: hidden;
-  position: fixed;
   background-position: center;
   cursor: pointer;
+  width: 100%;
 
 }
 
@@ -28,19 +28,16 @@
  }
 
 .content{
-
   display: flex;
   gap: 5px;
   padding: 10px;
-  width: 340px;
-  height: 250px;
   justify-content: center;
   margin-left: 80px;
   margin-top: -30px;
 }
 .menutext{
   margin-top: 50px;
-  font-size: 28px;
+  font-size: 20px;
   rotate: 270deg;
 }
 
@@ -51,7 +48,6 @@
   height: 110px;
   font-size: 20px;
   margin-right: 25px;
-  /* border: 1px solid black; */
 }
 
 .icons{

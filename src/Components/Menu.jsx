@@ -3,7 +3,7 @@ import styles from './Menu.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
-import logo from '../assets/Images/Brandlogo.png';
+import logo from '../assets/Images/brandlogo.png';
 
 const Menu = () => {
   const handleClose = () =>{
