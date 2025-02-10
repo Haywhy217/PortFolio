@@ -14,10 +14,6 @@ const ProjectCard = ({CardTitle, CardDescript, CardImg}) => {
   )
 }
 
-ProjectCard.propTypes = {
-  CardTitle: PropTypes.string.isRequired,
-  CardDescript: PropTypes.string.isRequired,
-  CardImg: PropTypes.string.isRequired
-};
+
 
 export default ProjectCard

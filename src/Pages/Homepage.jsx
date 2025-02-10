@@ -1,19 +1,12 @@
 import React from 'react'
-import Menu from '../Components/Menu'
-import { useNavigate } from 'react-router-dom'
-import Footer from '../Components/Footer';
+import Navbar from '../Components/NavBar';
 
 const Homepage = () => {
-  const navigate = useNavigate();
-
-  const handleHomeClick = () => {
-    navigate('/');
-  };
+  
 
   return (
     <>
-      <Menu onHomeClick={handleHomeClick} />
-      <Footer/>
+     <Navbar/>
     </>
   );
 };
